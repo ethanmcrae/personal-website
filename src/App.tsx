@@ -1,13 +1,16 @@
 import React from 'react';
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './style.css';
+import NavBar from './components/NavBar';
+import Homepage from './components/Homepage';
 
 const App = () => {
   return (
     <HashRouter>
+      {/* <NavBar /> */}
       <Routes>
-          <Route path='/' element={<h1>Hello, World!</h1>} />
-          <Route path='/*' element={<Navigate to='/' replace={true} />} />
+          <Route path='/' element={<Homepage />} />
+          {/* <Route path='/*' element={<Navigate to='/' replace={true} />} /> */}
       </Routes>
     </HashRouter>
   )
