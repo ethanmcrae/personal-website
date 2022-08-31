@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#hello {
+  color: white;
+  transition-duration: 5s;
+  font-size: 40px;
+}
+#hello.hello-dark {
+  color: #111;
+  /* text-shadow: 2px 2px 2px rgba(0,0,0,.6); */
+}
+#ethan {
+  color: #63ad7e;
+  /* text-shadow: 2px 2px 2px rgba(0,0,0,.25); */
+  font-weight: 500;
+  transition-duration: 5s;
+}
+#ethan.ethan-dark {
+  /* color: #8ef5b4; */
+  color: #8ef5b4;
+  /* color: red; */
+  text-shadow: 2px 2px 0px rgba(0,0,0,.6),
+  -1px 1px 0px rgba(0,0,0,.6);
+}
